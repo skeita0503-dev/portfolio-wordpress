@@ -1,0 +1,476 @@
+/*
+Theme Name: My Theme
+Author: けだま
+Version: 1.0
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #1e3a5f;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: #1e3a5f;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header nav ul li a {
+    color: #1e3a5f;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+header nav ul li a:hover {
+    color: #2563eb;
+}
+
+/* メニューを横並びに */
+header nav ul {
+    display: flex !important;
+    list-style: none;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #1e3a5f;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 0;
+}
+
+/* ヒーローセクション */
+.hero {
+    background-color: #1a1a2e;
+    color: #fff;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.hero__inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero__title {
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+
+.hero__content {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.hero__btn {
+    display: inline-block;
+    background-color: #e94560;
+    color: #fff;
+    padding: 16px 48px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: opacity 0.3s;
+}
+
+.hero__btn:hover {
+    opacity: 0.8;
+}
+
+/* 会社概要テーブル */
+.page-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+
+.page-content table th,
+.page-content table td {
+    padding: 16px 24px;
+    border-bottom: 1px solid #1e3a5f;
+    text-align: left;
+}
+
+.page-content table th {
+    width: 30%;
+    background-color: #f5f5f5;
+    font-weight: bold;
+    color: #333;
+}
+
+/* ページ共通スタイル */
+.page-content {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.page-content h1 {
+    font-size: 32px;
+    border-left: 4px solid #e94560;
+    padding-left: 16px;
+    margin-bottom: 40px;
+}
+
+/* 自己紹介文 */
+.page-content p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #334155;
+    margin-bottom: 32px;
+}
+
+/* 制作実績ページ */
+.page-content h2 {
+    font-size: 24px;
+    color: #1e3a5f;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #2563eb;
+    margin-bottom: 16px;
+    margin-top: 48px;
+}
+
+.page-content h3 {
+    font-size: 16px;
+    color: #2563eb;
+    margin-bottom: 8px;
+    margin-top: 24px;
+}
+
+.page-content hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 40px 0;
+}
+
+.page-content a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid #2563eb;
+    padding-bottom: 2px;
+    transition: opacity 0.3s;
+}
+
+.page-content a:hover {
+    opacity: 0.7;
+}
+
+/* お問い合わせフォーム */
+.wpcf7-form-control.wpcf7-text,
+.wpcf7-form-control.wpcf7-email,
+.wpcf7-form-control.wpcf7-textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+}
+
+.wpcf7-form-control.wpcf7-textarea {
+    height: 160px;
+    resize: vertical;
+}
+
+.wpcf7-form-control.wpcf7-submit {
+    background-color: #e94560;
+    color: #fff;
+    border: none;
+    padding: 16px 48px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.wpcf7-form-control.wpcf7-submit:hover {
+    opacity: 0.8;
+}
+
+/* サービスセクション */
+.services {
+    padding: 80px 20px;
+    background-color: #f8fafc;
+}
+
+.services__inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    color: #1e3a5f;
+    margin-bottom: 48px;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 3px;
+    background-color: #2563eb;
+    margin: 16px auto 0;
+}
+
+.services__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.services__card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 32px 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.services__card:hover {
+    transform: translateY(-4px);
+}
+
+.services__card h3 {
+    font-size: 18px;
+    color: #1e3a5f;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #2563eb;
+}
+
+.services__card p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #64748b;
+}
+
+/* CTAセクション */
+.cta {
+    background-color: #1e3a5f;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.cta__inner {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.cta p {
+    font-size: 16px;
+    opacity: 0.85;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.cta__btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #fff;
+    padding: 16px 48px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: opacity 0.3s;
+}
+
+.cta__btn:hover {
+    opacity: 0.8;
+}
+
+/* 制作実績セクション */
+.works {
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+
+.works__inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.works__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.works__card {
+    background-color: #f8fafc;
+    border-radius: 8px;
+    padding: 32px 24px;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s;
+}
+
+.works__card:hover {
+    transform: translateY(-4px);
+}
+
+.works__label {
+    font-size: 12px;
+    color: #2563eb;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.works__card h3 {
+    font-size: 20px;
+    color: #1e3a5f;
+    margin-bottom: 12px;
+}
+
+.works__card p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #64748b;
+    margin-bottom: 16px;
+}
+
+.works__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.works__tags span {
+    background-color: #e0e7ff;
+    color: #2563eb;
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.works__link {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.works__link:hover {
+    text-decoration: underline;
+}
+
+.works__links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.works__private {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+
+    /* ヘッダー */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 16px 20px;
+    }
+
+    header nav ul {
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    /* ヒーロー */
+    .hero__title {
+        font-size: 32px;
+    }
+
+    /* サービスカード */
+    .services__grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    /* ページコンテンツ */
+    .page-content {
+        padding: 40px 16px;
+    }
+
+    /* サービスカードの余白調整 */
+    .services {
+        padding: 48px 16px;
+    }
+
+    .services__card {
+        padding: 24px 16px;
+    }
+
+    /* テーブルのフォントサイズ調整 */
+    .page-content table th,
+    .page-content table td {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    .works__grid {
+        grid-template-columns: 1fr;
+    }
+}
